@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section  class="banner_section">
+                
+    
+  
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!-- animated dots -->
+    <div class="dotes_anim_bloack ">
+        <div class="dots dotes_1 "></div>
+        <div class="dots dotes_2 "></div>
+        <div class="dots dotes_3 "></div>
+        <div class="dots dotes_4 "></div>
+        <div class="dots dotes_5 "></div>
+        <div class="dots dotes_6 "></div>
+        <div class="dots dotes_7 "></div>
+        <div class="dots dotes_8 "></div>
+    </div>
+   
+   
+            <div class="section_title" data-aos="fade-in " data-aos-duration="1500 " data-aos-delay="200 ">
+               <br><br>
+                <h2 >Limpieza, <span>Orden y Prosperidad</span></h2>
+                
+            </div>
+           
+            <img src="{% static "images/new/hero_overlay_sd.png" %}" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="color: blue;" >Pata todos los vecinos del municipio
+
+                Trabajemos Juntos.</h2>
+                      </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+                        <!-- animated dots -->
+    <div class="dotes_anim_bloack ">
+        <div class="dots dotes_1 "></div>
+        <div class="dots dotes_2 "></div>
+        <div class="dots dotes_3 "></div>
+        <div class="dots dotes_4 "></div>
+        <div class="dots dotes_5 "></div>
+        <div class="dots dotes_6 "></div>
+        <div class="dots dotes_7 "></div>
+        <div class="dots dotes_8 "></div>
+    </div>
+    <div class="section_title" data-aos="fade-in " data-aos-duration="1500 " data-aos-delay="200 ">
+        <br><br>
+         <h2 >Limpieza, <span>Orden y Prosperidad</span></h2>
+         
+     </div>
+            <img src="{% static "images/new/hero_overlay_sd2.png" %}" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 style="color: blue;" >Pata todos los vecinos del municipio
+  
+                  Trabajemos Juntos.</h2>
+                        </div>
+          </div>
+          <div class="carousel-item">
+                        <!-- animated dots -->
+    <div class="dotes_anim_bloack ">
+        <div class="dots dotes_1 "></div>
+        <div class="dots dotes_2 "></div>
+        <div class="dots dotes_3 "></div>
+        <div class="dots dotes_4 "></div>
+        <div class="dots dotes_5 "></div>
+        <div class="dots dotes_6 "></div>
+        <div class="dots dotes_7 "></div>
+        <div class="dots dotes_8 "></div>
+    </div>
+    <div class="section_title" data-aos="fade-in " data-aos-duration="1500 " data-aos-delay="200 ">
+        <br><br>
+         <h2 >Limpieza, <span>Orden y Prosperidad</span></h2>
+         
+     </div>
+            <img src="{% static "images/new/hero_overlay_sd3.png" %}" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 style="color: blue;" >Pata todos los vecinos del municipio
+  
+                  Trabajemos Juntos.</h2>
+                        </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</section>
+        
+
+<!-- Story-Section-Start -->
+        <section class="row_am latest_story " id="blog ">
+            <!-- container start -->
+            <div class="container ">
+                <div class="section_title " data-aos="fade-in " data-aos-duration="1500 " data-aos-delay="100 ">
+                    <h2>Desarrollo para <span>todos</span></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe standard dummy.</p>
+                </div>
+                <!-- row start -->
+                <div class="row ">
+                    <!-- story -->
+                    {% for publicacion in publicacions %}
+                    <div class="col-md-4 ">
+                       
+                        <div class="story_box " data-aos="fade-up " data-aos-duration="1500 ">
+                            <div class="story_img ">
+                                <img src="../media/{{publicacion.imagen}} " alt="image ">
+                                <span>{{publicacion.Creacion}}</span>
+                            </div>
+                            <div class="story_text ">
+                                <div class="statstic ">
+                                    <span><i class="icofont-user-suited "></i> {{publicacion.user}}</span>
+                                    <span><i class="icofont-speech-comments "></i>  Comments</span>
+                                </div>
+                                <h3>{{publicacion.Titulo}} 555</h3>
+                                <p>{{publicacion.Ubicacion}} </p>
+                                <p>{{publicacion.Ubicacion}}</p>
+                                
+                           
+                           
+                                <a href="{% url 'dnew' publicacion.id %} " class="btn text_btn ">Ver Más <i class="icofont-arrow-right "></i></a>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                    {% endfor %}
+
+                
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </section>
+        <!-- Story-Section-end -->
+  
+    
+
+{% endblock %}

@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- Main Sign In Section -->
+    <div class="error_page_bg">
+
+        <div class="container">
+          <section class="error_page_section">
+            <div class="section_title">
+                <h2> {{publicacion.Titulo}}Oops! Page Not Found, something went wrong</h2>
+            </div>
+  
+            <div class="error_graphic">
+                <div class="lostman">
+                  <img src="images/new/lostman.png" alt="image">
+              </div>
+              <div class="errornumber">
+                  <img src="images/new/error-number.png" alt="image">
+              </div>
+            </div>
+            <div class="top_part">
+                <a href="index.html" data-aos="fade-up" data-aos-duration="2000" class="btn btn_main aos-init aos-animate"><i class="icofont-arrow-left"></i> Back to Home</a>
+            </div>
+  
+          </section>
+        </div>
+  
+      </div>
+
+              <!-- Pricing-Section -->
+              <section class="row_am pricing_section service_list_ps" id="pricing" data-aos="fade-in" data-aos-duration="1000">
+                <!-- container start -->
+                <div class="container">
+                    <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <h2>Best plans, pay what you use</h2> <h2>{{publicacion.Titulo}}</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typese tting indus <br> orem Ipsum has beenthe standard dummy text ever since.</p>
+
+                        {{form}}
+                    </div>
+                    <!-- toggle button -->
+                    <div class="toggle_block" data-aos="fade-up" data-aos-duration="1500">
+                        <span class="month active">Monthly</span>
+                        <div class="tog_block">
+                            <span class="tog_btn"></span>
+                        </div>
+                        <span class="years">Yearly</span>
+                        <span class="offer">50% off</span>
+                    </div>
+    
+                    <!-- pricing box  monthly start -->
+                    <div class="pricing_pannel monthly_plan active">
+                        <!-- row start -->
+                        <div class="row">
+                            <!-- pricing box 1 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block">
+                                    <div class="icon">
+                                        <img src="images/new/Free-Trial-01.svg" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Free Trial</h3>
+                                        <span>For the basics</span>
+                                    </div>
+                                    <span class="price">$0<span>/Month</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+    
+                            <!-- pricing box 2 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block highlited_block">
+                                    <div class="icon">
+                                        <img src="images/new/unlimited.png" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Unlimited</h3>
+                                        <span>For the professionals</span>
+                                    </div>
+                                    <span class="price">$99<span>/Month</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+    
+                            <!-- pricing box 3 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block">
+                                    <div class="icon">
+                                        <img src="images/new/Premium.svg" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Premium</h3>
+                                        <span>For small team</span>
+                                    </div>
+                                    <span class="price">$55<span>/Month</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row end -->
+                    </div>
+                    <!-- pricing box monthly end -->
+    
+                    <!-- pricing box yearly start -->
+                    <div class="pricing_pannel yearly_plan" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="row">
+    
+                            <!-- pricing box 1 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block">
+                                    <div class="icon">
+                                        <img src="images/new/Free-Trial-01.svg" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Free Trial</h3>
+                                        <span>For the basics</span>
+                                    </div>
+                                    <span class="price">$0<span>/Year</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+    
+                            <!-- pricing box 2 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block highlited_block">
+                                    <div class="icon">
+                                        <img src="images/new/unlimited.png" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Unlimited</h3>
+                                        <span>For the professionals</span>
+                                    </div>
+                                    <span class="price">$999<span>/Year</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+    
+                            <!-- pricing box 3 -->
+                            <div class="col-md-4">
+                                <div class="pricing_block">
+                                    <div class="icon">
+                                        <img src="images/new/Premium.svg" alt="image">
+                                        <div class="dot_block">
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                            <span class="dot_anim"></span>
+                                        </div>
+                                    </div>
+                                    <div class="pkg_name">
+                                        <h3>Premium</h3>
+                                        <span>For small team</span>
+                                    </div>
+                                    <span class="price">$555<span>/Year</span></span>
+                                    <ul class="benifits">
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>7 Days free trial</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>2 platform of your choice</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>10 GB Dedicated Hosting free</p>
+                                        </li>
+                                        <li class="include">
+                                            <p><i class="icofont-check-circled"></i>Unlimited updates</p>
+                                        </li>
+                                        <li class="exclude">
+                                            <p><i class="icofont-close-circled"></i>Live support</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <!-- container start end -->
+            </section>
+            <!-- Pricing-Section end -->
+
+{% endblock %}

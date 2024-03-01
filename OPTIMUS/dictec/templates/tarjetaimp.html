@@ -1,0 +1,176 @@
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="different types of invoice/bill/tally designed with friendly and markup using modern technology, you can use it on any type of website invoice, fully responsive and w3 validated.">
+    <meta name="keywords" content="bill , receipt, tally, invoice, cash memo, invoice html, invoice pdf, invoice print, invoice templates, multipurpose invoice, template, booking invoice, general invoice, clean invoice, catalog, estimate, proposal">
+    <meta name="author" content="initTheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>initBill - invoice & Receipt HTML Template </title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/icon/favicon.png">
+    
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main-stylec.css' %}">
+</head>
+<body class="section-bg-one">
+    <main class="container invoice-wrapper" id="download-section">
+        <!-- invoice Top -->
+        <div class="card-headers d-flex flex-wrap gap-15 align-items-center justify-content-between mb-4">
+            <div class="logo">
+                <div class="story_img ">
+                    <img src="{% static "images/new/logo_white3.png" %}" alt="image">
+               </div>
+               
+            </div>
+            <div class="title">
+                <h4 class="text-30 mb-0 mt-0">Tarjeta de Ciruclación Municipal</h4>
+                <span class="status d-block text-capitalize"><strong>   Numero:</strong>       {{publicacion.id}}         <strong>Status:</strong> Vigente Año 2024</span>
+                
+            </div>
+        </div>
+        <!-- invoice Description -->
+        <div class="card-body mb-4 border-top pt-25 mt-30">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="invoice-details">
+                        <h6 class="mb-10 text-50 text-capitalize"> Mototaxi</h6>
+                        <p><strong >Municipio de Guastatoya, El Progreso</strong></p>
+                        <div class="invoice-details-inner mt-2">
+                         
+                            <p><strong>NIT:</strong> 258657485-1</p>
+                            <p><strong>CUI:</strong> 2564 78524 2023</p>
+                            <p><strong>USO:</strong> Comercial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="invoice-details">
+                        <h5 class="mb-10 text-18 text-capitalize"> Nombre:</h5>
+                        <p><strong >{{publicacion.Titulo}}</strong></p>
+                        <div class="invoice-details-inner mt-2">
+                            <p><strong>Attn:</strong> Daniel Marek</p>
+                            <p><strong>Address:</strong>43-190 Mikolow, Bangladesh</p>
+                            <p><strong>Email:</strong> inittheme@.com</p>
+                            <p><strong>Phone:</strong> +008 123 456 789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% comment %} <!-- invoice Table -->
+        <div class="table-responsive invoice-table mb-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Unit Cost</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Origin License</td>
+                        <td>Extended License</td>
+                        <td>$999,00</td>
+                        <td>1</td>
+                        <td>$999,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Custom Services</td>
+                        <td>Instalation and Customization (cost per hour)</td>
+                        <td>$150,00</td>
+                        <td>20</td>
+                        <td>$3.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hosting</td>
+                        <td>1 year subcription</td>
+                        <td>$499,00</td>
+                        <td>1</td>
+                        <td>$499,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Platinum Support</td>
+                        <td>1 year subcription 24/7</td>
+                        <td>$3.999,00</td>
+                        <td>1</td>
+                        <td>$3.999,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td> Support</td>
+                        <td>1 year subcription 24/7</td>
+                        <td>$3.999,00</td>
+                        <td>1</td>
+                        <td>$3.999,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-sm-4"></div>
+            <div class="col-lg-5 col-md-6 col-sm-7 ms-auto">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong class="status">Subtotal</strong>
+                            </td>
+                            <td>$8.497,00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="status">Discount (20%)</strong>
+                            </td>
+                            <td>$1,699,40</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="status">VAT (10%)</strong>
+                            </td>
+                            <td>$679,76</td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom-0">
+                                <strong>Total</strong>
+                            </td>
+                            <td class="border-bottom-0">
+                                <strong>$7.477,36</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> {% endcomment %}
+    </main>
+    <!-- invoice Bottom  -->
+    <div class="text-center mt-5 mb-4 regular-button">
+        <div class="d-print-none d-flex justify-content-center flex-wrap gap-10"> 
+            <button id="bill-download" class="btn-primary-outline">Descargar</button> 
+            <a href="javascript:window.print()" class="btn-primary-fill">Imprimir</a> 
+        </div>
+    </div>
+
+    <!-- jquery-->
+    <script src="{% static 'js/jquery-3.7.0.minc.js' %}"></script>
+    <!-- Plugin -->
+    <script src="{% static 'js/pluginc.js' %}"></script>
+    <!-- Main js-->
+    <script src="{% static 'js/mianc.js' %}"></script>
+</body>
+</html>
+
+{% endblock %}
